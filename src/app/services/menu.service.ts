@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 })
 export class MenuService {
   constructor() { }
+
   loadMenu(): Observable<Menu[]> {
     return timer(500)
       .pipe(
